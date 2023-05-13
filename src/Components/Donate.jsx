@@ -42,10 +42,10 @@ const Donate = () => {
     <>
       <div className="bg-hero relative bg-center p-24 bg-cover bg-no-repeat bg-fixed ">
         <div className="container mx-auto text-center relative z-10">
-          <h1 className=" text-white font-oswald text-[2.1rem] mb-4 ">
+          <h1 className=" text-white font-oswald lg:text-[2.1rem] md:text-[2.1rem] text-3xl mb-4 ">
             Make A Donation Now! You May <br /> Change Lives Forever
           </h1>
-          <button className="text-white bg-orange-500 hover:bg-orange-800 transition p-2 w-[28rem] rounded h-14">
+          <button className="text-white bg-orange-500 hover:bg-orange-800 transition p-2 lg:w-[28rem] w-[12rem] rounded h-14">
             Donate Now
           </button>
         </div>
@@ -220,8 +220,8 @@ const Donate = () => {
           squid celiac humblebrag.
         </p>
       </div>
-      <div className="container flex mx-auto mt-14 gap-x-8 px-24 text-center mb-28 ">
-        <div className="basis-1/3 border  ">
+      <div className="container lg:flex mx-auto mt-14 gap-x-8 px-24 text-center mb-28 ">
+        <div className="md:basis-1/3 sm:basis-1 mt-5 border  ">
           <img
             src="https://preview.colorlib.com/theme/foundation/images/person_1.jpg"
             alt=""
@@ -246,7 +246,7 @@ const Donate = () => {
             </button>
           </div>
         </div>
-        <div className="basis-1/3 border ">
+        <div className="md:basis-1/3 sm:basis-1 mt-5 border ">
           <img
             src="	https://preview.colorlib.com/theme/foundation/images/person_2.jpg"
             alt=""
@@ -271,7 +271,7 @@ const Donate = () => {
             </button>
           </div>
         </div>
-        <div className="basis-1/3 border ">
+        <div className="md:basis-1/3 sm:basis-1  mt-5 border ">
           <img
             src="https://preview.colorlib.com/theme/foundation/images/person_3.jpg"
             alt=""
@@ -299,19 +299,35 @@ const Donate = () => {
       </div>
       <div className="testimonial bg-hero relative bg-center p-24 bg-cover bg-no-repeat bg-fixed ">
         <div className="flex flex-col text-center w-full mt-0 mb-8">
-          <h1 className=" text-[4rem] font-bold  font-oswald mb-4 text-white z-10 uppercase">
+          <h1 className=" lg:text-[4rem] font-bold  md:text-[3rem] text-[2rem]  font-oswald mb-4 text-white z-10 uppercase">
             Testimonial{" "}
           </h1>
         </div>
         <Swiper className="mb-24"
+         breakpoints={{
+           // when window width is >= 640px
+           320: {
+            width: 320,
+            slidesPerView: 1.5,
+          },
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 2.5,
+          },
+        }}
           spaceBetween={50}
           slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          
         >
           {sliderdata && sliderdata.map((item)=>(
           <SwiperSlide className="text-center" key={item.id}>
-            <p className="bg-white p-8 tracking-wider font-cursive text-lg font-medium leading-7">
+            <p className="bg-white p-8 tracking-wider font-cursive lg:text-lg md-text-lg text-base font-medium leading-7">
               
             {item.para}
             </p>

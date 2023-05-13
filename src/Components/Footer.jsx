@@ -65,9 +65,9 @@ const Footer = () => {
                   <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
                     <h3
                       htmlFor="footer-field"
-                      className="leading-7 text-lg pb-4 text-white uppercase font-oswald"
+                      className="leading-7 text-lg pb-4 tracking-widest text-white uppercase font-oswald"
                     >
-                     sunscribe to newsletter
+                     subscribe to newsletter
                     </h3>
                     <input
                       type="text"
@@ -81,7 +81,7 @@ const Footer = () => {
                     Subscribe
                   </button>
                 </div> 
-                <h3 className="text-white font-oswald uppercase mt-10 mb-5 tetx-lg tracking-wider">follow us</h3>
+                <h3 className="text-white font-oswald  uppercase mt-10 mb-5 tetx-lg tracking-widest">follow us</h3>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a className="text-gray-500">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
