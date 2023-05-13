@@ -6,7 +6,7 @@ const Cards = () => {
     <section className="text-gray-600 body-font">
   <div className=" px-4 pt-4 pb-4 ">
     
-    <div className="flex flex-wrap -m-4">
+    <div className="flex lg:flex-wrap -m-4">
       <div className="xl:w-1/3 md:w-1/2 p-4 bg-gray-700">
         <div className="border border-gray-200 p-6 ">
           <h1 className='text-white font-oswald uppercase text-[2rem]'>Rescue an orpahn</h1>
